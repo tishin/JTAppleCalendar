@@ -32,6 +32,7 @@ import UIKit
 /// then modify it self
 @available(*, unavailable, renamed: "JTACMonthViewDataSource")
 public protocol JTAppleCalendarViewDataSource: AnyObject {}
+@MainActor
 public protocol JTACMonthViewDataSource: AnyObject {
     /// Asks the data source to return the start and end boundary dates
     /// as well as the calendar to use. You should properly configure
@@ -48,6 +49,7 @@ public protocol JTACMonthViewDataSource: AnyObject {
 /// allow the delegate to manage selections, and configure the cells
 @available(*, unavailable, renamed: "JTACMonthViewDelegate")
 public protocol JTAppleCalendarViewDelegate: AnyObject {}
+@MainActor
 public protocol JTACMonthViewDelegate: AnyObject {
     /// Asks the delegate if selecting the date-cell with a specified date is
     /// allowed

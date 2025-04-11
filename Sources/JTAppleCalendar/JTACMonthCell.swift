@@ -25,6 +25,7 @@
 import Foundation
 import UIKit
 
+@MainActor
 public protocol JTACCellMonthViewDelegate: AnyObject {
     func monthView(_ monthView: JTACCellMonthView,
                   drawingFor segmentRect: CGRect,

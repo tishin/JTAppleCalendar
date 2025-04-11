@@ -24,6 +24,7 @@
 import Foundation
 import UIKit
 
+@MainActor
 protocol JTACMonthDelegateProtocol: AnyObject {
     // Variables
     var allowsDateCellStretching: Bool {get set}

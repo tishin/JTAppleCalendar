@@ -24,6 +24,7 @@
 
 import UIKit
 
+@MainActor
 protocol JTACMonthLayoutProtocol: AnyObject {
     var minimumInteritemSpacing: CGFloat {get set}
     var minimumLineSpacing: CGFloat {get set}
